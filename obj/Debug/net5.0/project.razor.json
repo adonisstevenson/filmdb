@@ -15649,8 +15649,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/danielo/Pulpit/filmdb/Views/Home copy/Privacy.cshtml",
+      "TargetPath": "Views\\Home copy\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/danielo/Pulpit/filmdb/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/danielo/Pulpit/filmdb/Views/Home copy/Index.cshtml",
+      "TargetPath": "Views\\Home copy\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],
