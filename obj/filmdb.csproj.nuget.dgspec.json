@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/danielo/Pulpit/filmdb/filmdb.csproj": {}
+    "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/filmdb.csproj": {}
   },
   "projects": {
-    "/home/danielo/Pulpit/filmdb/filmdb.csproj": {
+    "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/filmdb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/danielo/Pulpit/filmdb/filmdb.csproj",
+        "projectUniqueName": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/filmdb.csproj",
         "projectName": "filmdb",
-        "projectPath": "/home/danielo/Pulpit/filmdb/filmdb.csproj",
+        "projectPath": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/filmdb.csproj",
         "packagesPath": "/home/danielo/.nuget/packages/",
-        "outputPath": "/home/danielo/Pulpit/filmdb/obj/",
+        "outputPath": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/danielo/.nuget/NuGet/NuGet.Config"

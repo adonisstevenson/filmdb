@@ -4,77 +4,126 @@ using Microsoft.EntityFrameworkCore;
 using filmdb.Models;
 using System.Collections.Generic;
 using System.Linq;
-
+using System;
+using System.IO;
 
 namespace filmdb{
+    public interface IFilmManager
+    {
+        FilmManager AddFilm(FilmModel filmModel);
+        FilmManager ChangeTitle(int id, string newTitle);
+        bool FilmExists(int id);
+        FilmModel GetFilm(int id);
+        List<FilmModel> GetFilms();
+        FilmManager RemoveFilm(int id);
+        FilmManager UpdateFilm(FilmModel filmModel);
+    }
 
-    public class FilmManager
-{
-    public FilmManager AddFilm(FilmModel filmModel)
-    {   
-        using (FilmContext context = new FilmContext()){
-            context.Add(filmModel);
-
-            try{
-                context.SaveChanges();
+    public class FilmManager : IFilmManager
+    {
+        public FilmManager AddFilm(FilmModel filmModel)
+        {
+            using (var context = new FilmContext())
+            {
+                context.Add(filmModel);
+                // TODO: Wyjasnic dlaczego ID dodawanego filmu to >1000
+                try
+                {
+                    context.SaveChanges();
                 }
-            catch{
-                filmModel.ID = 0;
+                catch (Exception)
+                {
+
+                    // filmModel.ID = null;
+                    context.Add(filmModel);
+                    context.SaveChanges();
+                }
+            }
+
+            return this;
+        }
+
+        public FilmManager RemoveFilm(int id)
+        {
+            using (var context = new FilmContext())
+            {
+
+                var film = context.Films.SingleOrDefault(x => x.ID == id);
+                context.Remove(film);
+                context.SaveChanges();
+
+                // stare i glupie
+                // FilmModel film = context.Films.Find(id);
+                // context.Films.Remove(film);
+                // context.SaveChanges();
+            }
+
+
+            return this;
+        }
+
+        public FilmManager UpdateFilm(FilmModel filmModel)
+        {
+            using (var context = new FilmContext())
+            {
+                context.Films.Update(filmModel);
                 context.SaveChanges();
             }
-        }
-        
-        return this;
-    }
 
-    public FilmManager RemoveFilm(int id)
-    {   
-        using (FilmContext context = new FilmContext()){
-
-            FilmModel film = context.Films.Find(id);
-            context.Films.Remove(film);
-            context.SaveChanges();
-        }
-        
-
-        return this;
-    }
-
-    public FilmManager UpdateFilm(FilmModel filmModel)
-    {
-        using (FilmContext context = new FilmContext()){
-            context.Films.Update(filmModel);
-            context.SaveChanges();
+            return this;
         }
 
-        return this;
-    }
+        public FilmManager ChangeTitle(int id, string newTitle)
+        {
+            using (var context = new FilmContext())
+            {
+                FilmModel film = context.Films.SingleOrDefault(x => x.ID == id);
 
-    public FilmManager ChangeTitle(int id, string newTitle)
-    {
-        using(FilmContext context = new FilmContext()){
-            FilmModel film = context.Films.Find(id);
+                if (newTitle == null)
+                {
+                    newTitle = "Brak tytułu";
+                }
 
-            if (newTitle == null){
-                newTitle = "Brak tytułu";
+                film.Title = newTitle;
+                this.UpdateFilm(film);
             }
 
-            film.Title = newTitle;
-            context.SaveChanges();
+            return this;
         }
 
-        return this;
-    }
+        public FilmModel GetFilm(int id)
+        {
 
-    public FilmManager GetFilm(int id)
-    {
-        return null;
-    }
+            using (var context = new FilmContext())
+            {
+                FilmModel film = context.Films.SingleOrDefault(x => x.ID == id);
 
-    public List<FilmModel> GetFilms()
-    {
-        return null;
+                return film;
+            }
+        }
+
+        public bool FilmExists(int id)
+        {
+            using (var context = new FilmContext())
+            {
+                if (context.Films.Any(o => o.ID == id))
+                {
+                    return true;
+                }
+                return false;
+            }
+        }
+
+        public List<FilmModel> GetFilms()
+        {
+            using (var context = new FilmContext())
+            {
+
+                var films = context.Films.ToList();
+                return films;
+            }
+        }
+
     }
-}
 
 }

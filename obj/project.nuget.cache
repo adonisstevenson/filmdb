@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S72jXlLIVAmGrHmmGcfT35im1TCkPhnTYh/rlLvru4oqlNZJvUZxBV+jbkl+xjrlCdlhLzYOWYRksFtIVZDTzQ==",
+  "dgSpecHash": "31M291Aclr6ivOEmQzjZTIfxQVFYZaZcyfqGUFyqKVoJsjlxVdimnyegSC1jp9FoX2lv/nZwvWR9N7rStxlBLA==",
   "success": true,
-  "projectFilePath": "/home/danielo/Pulpit/filmdb/filmdb.csproj",
+  "projectFilePath": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/filmdb.csproj",
   "expectedPackageFiles": [
     "/home/danielo/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/home/danielo/.nuget/packages/konsola/1.0.3/konsola.1.0.3.nupkg.sha512",

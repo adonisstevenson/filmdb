@@ -1,5 +1,5 @@
 {
-  "FilePath": "/home/danielo/Pulpit/filmdb/filmdb.csproj",
+  "FilePath": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/filmdb.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,48 +15619,58 @@
   "RootNamespace": "filmdb",
   "Documents": [
     {
-      "FilePath": "/home/danielo/Pulpit/filmdb/Views/Home/Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/danielo/Pulpit/filmdb/Views/Film/Privacy.cshtml",
-      "TargetPath": "Views\\Film\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/danielo/Pulpit/filmdb/Views/_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/danielo/Pulpit/filmdb/Views/Shared/Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/danielo/Pulpit/filmdb/Views/_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/danielo/Pulpit/filmdb/Views/Home/Privacy.cshtml",
+      "FilePath": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/danielo/Pulpit/filmdb/Views/Film/Index.cshtml",
+      "FilePath": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/Views/Shared/Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/Views/Film/Remove.cshtml",
+      "TargetPath": "Views\\Film\\Remove.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/Views/Film/Index.cshtml",
       "TargetPath": "Views\\Film\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/danielo/Pulpit/filmdb/Views/Shared/_Layout.cshtml",
+      "FilePath": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/danielo/Pulpit/filmdb/Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/Views/Film/Add.cshtml",
+      "TargetPath": "Views\\Film\\Add.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/Views/Film/Privacy.cshtml",
+      "TargetPath": "Views\\Film\\Privacy.cshtml",
       "FileKind": "mvc"
     }
   ],

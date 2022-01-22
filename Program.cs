@@ -20,8 +20,6 @@ namespace filmdb
         public static void Main(string[] args)
         {
 
-            // FilmManager film = new FilmManager();
-            // film.ChangeTitle(1, null);
 
             CreateHostBuilder(args).Build().Run();
 
