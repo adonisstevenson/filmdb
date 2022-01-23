@@ -152,3 +152,4 @@
 /home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/obj/Debug/net5.0/filmdb.Views.pdb
 /home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/obj/Debug/net5.0/filmdb.csproj.CopyComplete
 /home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/obj/Debug/net5.0/filmdb.genruntimeconfig.cache
+/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/obj/Debug/net5.0/Razor/Views/Film/Edit.cshtml.g.cs

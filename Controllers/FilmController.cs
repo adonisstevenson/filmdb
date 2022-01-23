@@ -23,39 +23,11 @@ namespace filmdb.Controllers
             return View(films);
         }
 
-        // [Route("Films/EditTitle/{id?}/{title?}")]
-
-        public IActionResult Index(int id, string title){
-            _filmManager.ChangeTitle(id, title);
-            // // var film = new FilmModel();
-            // // // film.ID = 1;
-            // // film.Title = "Huj";
-            // // film.Year = 2137;
-            // // manager.AddFilm(film);
-
-            // manager.RemoveFilm(2);
-
-
-            
-            return View();
-        }
-
         [HttpGet]
         [Route("Films/add")]
         public IActionResult Add(){
             return View();
         }
-
-        // 
-        // GET: /HelloWorld/
-
-        // public string Index()
-        // {
-        //     return "This is my default action...";
-        // }
-
-        // 
-        // GET: /HelloWorld/Welcome/ 
 
         [HttpPost]
         [Route("Films/add")]
@@ -91,6 +63,15 @@ namespace filmdb.Controllers
 
             return View(film);
         }
+
+        [HttpPost]
+        public IActionResult Edit(FilmModel film)
+        {
+            
+            _filmManager.UpdateFilm(film);
+            return RedirectToAction("Index");
+        }
+
         public string Welcome()
         {
             return "This is the Welcome action method...";

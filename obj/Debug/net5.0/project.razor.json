@@ -15649,6 +15649,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/Views/Film/Edit.cshtml",
+      "TargetPath": "Views\\Film\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/danielo/Pulpit/netcoremvc-wwsi/FilmDB_Daniel_Gromak/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
